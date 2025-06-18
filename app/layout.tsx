@@ -7,8 +7,17 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "SDVistic Labs – AI, Automation & Web Development",
-  description: "We build intelligent systems using AI, automation, and smart web development.",
-  keywords: ["AI", "automation", "web development", "chatbots", "CRM", "smart websites", "artificial intelligence"],
+  description: "We turn ideas into intelligent systems using AI, automation, and smart web development.",
+  keywords: [
+    "AI",
+    "automation",
+    "web development",
+    "chatbots",
+    "CRM",
+    "smart websites",
+    "artificial intelligence",
+    "business automation",
+  ],
   authors: [{ name: "SDVistic Labs" }],
   creator: "SDVistic Labs",
   publisher: "SDVistic Labs",
@@ -17,22 +26,22 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://sdvisticlabs.com",
     siteName: "SDVistic Labs",
-    title: "SDVistic Labs – AI, Automation & Web Development",
-    description: "We build intelligent systems using AI, automation, and smart web development.",
+    title: "SDVistic Labs",
+    description: "AI & Automation solutions to streamline your business",
     images: [
       {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "SDVistic Labs - AI, Automation & Web Development",
+        url: "https://sdvisticlabs.com/favicon.ico",
+        width: 32,
+        height: 32,
+        alt: "SDVistic Labs Logo",
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "SDVistic Labs – AI, Automation & Web Development",
-    description: "We build intelligent systems using AI, automation, and smart web development.",
-    images: ["/og-image.jpg"],
+    card: "summary",
+    title: "SDVistic Labs",
+    description: "AI & Automation solutions to streamline your business",
+    images: ["https://sdvisticlabs.com/favicon.ico"],
     creator: "@sdvisticlabs",
   },
   robots: {
@@ -46,8 +55,10 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-verification-code",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
     generator: 'v0.dev'
 }
@@ -60,12 +71,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Favicon - will be added when uploaded */}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
 
         {/* Additional SEO meta tags */}
         <meta name="theme-color" content="#1e293b" />
