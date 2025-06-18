@@ -56,7 +56,10 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.ico", type: "image/x-icon" },
+    ],
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
@@ -71,11 +74,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Favicon */}
+        {/* Favicon - Multiple formats for maximum compatibility */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" />
 
         {/* Additional SEO meta tags */}
         <meta name="theme-color" content="#1e293b" />

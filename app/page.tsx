@@ -738,8 +738,9 @@ export default function LandingPage() {
                     preload="auto"
                     className="w-full h-64 object-cover rounded-lg shadow-lg"
                     style={{ borderRadius: "12px" }}
+                    poster="/videos/homepage-video-poster.jpg"
                   >
-                    <source src="/videos/SDVistic_Labs.mp4" type="video/mp4" />
+                    <source src="/videos/homepage-video.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </motion.div>
