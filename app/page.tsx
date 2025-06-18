@@ -735,6 +735,7 @@ export default function LandingPage() {
                     muted
                     loop
                     playsInline
+                    preload="auto"
                     className="w-full h-64 object-cover rounded-lg shadow-lg"
                     style={{ borderRadius: "12px" }}
                   >
